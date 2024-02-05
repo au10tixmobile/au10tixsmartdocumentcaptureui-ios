@@ -17,6 +17,7 @@ let package = Package(
         .library(name: "Au10tixCore", targets: ["Au10tixCore"]),
         .library(name: "Au10tixSourceManager", targets: ["Au10tixSourceManager"]),
         .library(name: "Au10tixSmartDocumentCaptureKit", targets: ["Au10tixSmartDocumentCaptureKit"]),
+        .library(name: "Au10tixBaseUI", targets: ["Au10tixBaseUI"]),
         .library(name: "Au10tixSmartDocumentCaptureUI", targets: ["Au10tixSmartDocumentCaptureUI"])
     ],
     targets: [
@@ -34,6 +35,11 @@ let package = Package(
           name: "Au10tixSmartDocumentCaptureKit",
           url: "https://github.com/au10tixmobile/Au10tixSmartDocumentCaptureKit/archive/refs/tags/3.28.0.zip",
           checksum: "27de9e8fca813f867ac3081ea343447209c9f118bc0d531db0445c0ebffd466d"
+        ),
+        .binaryTarget(
+          name: "Au10tixBaseUI",
+          url: "https://github.com/au10tixmobile/Au10tixBaseUI/archive/refs/tags/3.28.0.zip",
+          checksum: "e3812351794a528b808704a99665690af8437fb55e184d7ab65df7b14fd1cdc2"
         ),
         .binaryTarget(
           name: "Au10tixSmartDocumentCaptureUI",
